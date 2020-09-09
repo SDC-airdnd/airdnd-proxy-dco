@@ -1,29 +1,20 @@
-
 {
   "routes": [
     {
-      "route": "/photos",
-      "address": "http://18.218.52.58:3001/photos"
-    },
-    {
       "route": "/listings",
-      "address": "http://54.153.105.148:3002/listings"
+      "address": "http://sdclb-1592457807.us-west-2.elb.amazonaws.com/"
     },
     {
       "route": "/room",
-      "address": "http://52.53.211.152:3333/room"
+      "address": "http://sdcapploadbalancer-1123295312.us-west-1.elb.amazonaws.com/"
     },
     {
       "route": "/booking",
-      "address": "http://52.53.211.152:3333/booking"
+      "address": "http://sdcapploadbalancer-1123295312.us-west-1.elb.amazonaws.com/"
     },
     {
       "route": "/reviews",
-      "address": "http://18.218.58.47:3004/reviews"
-    },
-    {
-      "route": "/MoreHomes",
-      "address": "http://3.14.81.50/MoreHomes"
+      "address": "http://ec2-lb-airdnd-reviews-84353792.us-west-1.elb.amazonaws.com/"
     }
   ]
 }

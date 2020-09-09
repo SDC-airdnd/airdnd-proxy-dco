@@ -17,9 +17,10 @@ for (route of routes) {
     app.use(route.route,
         proxy({
             target: route.address,
-            pathRewrite: (path, req) => {
-                return path.split('/').slice(2).join('/'); // Could use replace, but take care of the leading '/'
-            }
+            // pathRewrite: (path, req) => {
+            //     console.log('path: ', path);
+            //     return path.split('/').slice(2).join('/'); // Could use replace, but take care of the leading '/'
+            // }
         })
     );
 }
